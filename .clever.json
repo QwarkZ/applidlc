@@ -1,0 +1,11 @@
+{
+  "apps": [
+    {
+      "app_id": "app_8d6a93a9-a1f4-4ae4-b4fc-fe6c60014944",
+      "org_id": "user_3ea56dea-4e82-4534-b9c9-3cd094f5f99b",
+      "deploy_url": "https://push-par-clevercloud-customers.services.clever-cloud.com/app_8d6a93a9-a1f4-4ae4-b4fc-fe6c60014944.git",
+      "name": "applidlc",
+      "alias": "applidlc"
+    }
+  ]
+}
