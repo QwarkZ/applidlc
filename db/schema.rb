@@ -10,10 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+devise-install
+ActiveRecord::Schema.define(version: 2021_03_09_103133) do
+
 ActiveRecord::Schema.define(version: 2021_03_09_103002) do
+ master
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+devise-install
+  create_table "users", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  end
 
   create_table "association_partners", force: :cascade do |t|
     t.bigint "association_id"
@@ -124,4 +141,5 @@ ActiveRecord::Schema.define(version: 2021_03_09_103002) do
   add_foreign_key "harvests", "partners"
   add_foreign_key "partners", "brands"
   add_foreign_key "users", "associations"
+master
 end
