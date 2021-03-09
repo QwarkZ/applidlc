@@ -21,19 +21,19 @@ ActiveStorage.start()
 // External imports
 import "bootstrap";
 
-// Internal imports, e.g:
-// import { initSelect2 } from '../components/init_select2';
+// Internal imports
+
 
 document.addEventListener('turbolinks:load', () => {
   // initMapbox();
 
-  const searchButton = document.getElementById("search");
-  if (searchButton) {
-    searchButton.addEventListener('click', () => {
-      const place = document.getElementById("place");
-      const searchData = place.value;
-      const result = Geocoder.search("Paris");
-      // console.log(initMapbox.geocoder);
-    });
-  }
+  // const searchButton = document.getElementById("search");
+  // if (searchButton) {
+  //   searchButton.addEventListener('click', () => {
+  //     const place = document.getElementById("place");
+  //     const searchData = place.value;
+  //     const result = Geocoder.search("Paris");
+  //     console.log(initMapbox.geocoder);
+  //   });
+  // }
 });
