@@ -25,6 +25,15 @@ import "bootstrap";
 // import { initSelect2 } from '../components/init_select2';
 
 document.addEventListener('turbolinks:load', () => {
-  // Call your functions here, e.g:
-  // initSelect2();
+  // initMapbox();
+
+  const searchButton = document.getElementById("search");
+  if (searchButton) {
+    searchButton.addEventListener('click', () => {
+      const place = document.getElementById("place");
+      const searchData = place.value;
+      const result = Geocoder.search("Paris");
+      // console.log(initMapbox.geocoder);
+    });
+  }
 });
